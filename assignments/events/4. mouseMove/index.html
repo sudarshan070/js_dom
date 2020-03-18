@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <style>
+      div {
+        padding: 20px;
+        margin: 100px;
+        width: 400px;
+        height: 500px;
+        border: 10px solid rgb(0, 255, 98);
+      }
+      li {
+        list-style-type: none;
+        font-size: 28px;
+        padding-top: 28px;
+      }
+    </style>
+
+    <div class="movement">
+      <h1>Move Mouse cursor</h1>
+      <ul>
+        <li class="screenX">881</li>
+        <li class="screenY">343</li>
+        <li class="clientX">467</li>
+        <li class="clientY">164</li>
+      </ul>
+    </div>
+    <script>
+      // Mouse move in space that time value should be chang
+      var movement = document.querySelector(".movement");
+
+      function handler() {
+        var one = document.querySelector(".screenX");
+        one.innerText = event.screenX;
+
+        var two = document.querySelector(".screenY");
+        two.innerText = event.screenY;
+
+        var three = document.querySelector(".clientX");
+        three.innerText = event.clientX;
+
+        var four = document.querySelector(".clientY");
+        four.innerText = event.clientY;
+      }
+
+      movement.addEventListener("mousemove", handler);
+    </script>
+  </body>
+</html>
