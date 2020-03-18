@@ -3,26 +3,27 @@
 Use the below instruction and solve it using `index.html` file. Write JavaScript in the `script` tag.
 
 ## Check all the Root nodes
+
 1. `document` for root DOM
 2. `document.documentElement` for html
 3. `document.head` for head
 4. `document.title` for title
 5. `document.body` for body
 
-
 ## Parent Nodes
+
 The nodes in the DOM are referred to as parents, children, and siblings, depending on their relation to other nodes. The parent of any node is the node that is one level above it, or closer to the document in the DOM hierarchy. There are two properties to get the parent — parentNode and parentElement.
 
 In index.html example:
 
-* `html` is the parent of `head`, `body`, and `script`.
-* `body` is the parent of `h1`, `h2`, `p` and `ul`, but not `li`, since `li` is two levels down from body.
+- `html` is the parent of `head`, `body`, and `script`.
+- `body` is the parent of `h1`, `h2`, `p` and `ul`, but not `li`, since `li` is two levels down from body.
 
 ## Children Nodes
+
 The children of a node are the nodes that are one level below it. Any nodes beyond one level of nesting are usually referred to as descendants.
 
 ![Child Nodes](./assets/childnodes.png)
-
 
 ## Todo Tasks
 
